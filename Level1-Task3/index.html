@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter | OIBSIP Task 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="converter-box">
+            <h2 class="title"><i class="fas fa-temperature-high"></i> Temperature Converter</h2>
+            
+            <div class="input-group">
+                <label>Enter Value:</label>
+                <input type="number" id="degree">
+            </div>
+
+            <div class="options-group">
+                <div class="select-box">
+                    <label>From:</label>
+                    <select id="inputType">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+
+                <div class="icon-swap">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+
+                <div class="select-box">
+                    <label>To:</label>
+                    <select id="resultType">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit" selected>Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convertBtn">Convert Now</button>
+
+            <div class="result-area">
+                <p>Result:</p>
+                <h1 id="resultValue"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
